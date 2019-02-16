@@ -1,0 +1,194 @@
+*{margin: 0px;
+  padding: 0px;}
+  
+header, nav, section, article, footer,aside, hgroup{display: block;}
+  
+body, html{text-align: center;
+		background-color: #FFFFFF;
+		height: 100%;
+		font-family: Tahoma, Sans-serif;}
+		
+
+
+a{text-decoration: none;}
+li a{display: block;}
+
+.sectionRow{width: 100%; position: relative; padding: 40px 0; float: left;}
+
+/* NORMAL NAVIGATION -----------------------------------------------------------------------------------------------------------------------------------*/
+a[class *= 'linkButton']{display: block; margin: 0px auto; width: 250px; border-radius: 100px; font-size: 16px; padding: 15px; text-decoration: none;}	
+
+#normalNavMainBar{position: absolute; top: 0; width: 100%; border-bottom: 1px solid #444444; background: #ffffff; z-index: 4;}
+#normalNavMainBarContentHolder{width: 75%; height: 100%; margin: 0px auto;}
+
+.halfOfMainNavBar{float: left; width: 50%; height: 100%;}
+
+#rightNavMainListItems{list-style: none; float: right;}
+
+#rightNavMainListItems li{float: right;}
+
+#rightNavMainListItems li a{padding: 26.5px 0 26.5px 0; -webkit-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s;}
+
+#rightNavMainListItems li a:hover{color: #a9a9a9; position: relative; padding: 21.5px 0 31.5px 0;}
+
+.normalNavButton{margin: 0px 15px 0px 15px; cursor: pointer; color: #444444;}
+.normalNavButton2{padding: 11px 15px 11px 15px; cursor: pointer; /*color: #2186de;*/ font-size: 16px; -webkit-border-radius: 50px; -moz-border-radius: 50px; 
+					border-radius: 50px;}
+			
+
+#normalNavigationLogo{width: 220.8px; height: 48px; padding:12px; float: left;}
+
+#normalNavResumeButton{background: #ffffff; border: 1px solid #777777; color: #444444; float: right; margin: 14px 0 0 10px;
+						-webkit-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s;}
+#normalNavResumeButton:hover{background: #e7e7e7;}
+		
+		
+		
+/*Slideshow Row*/
+	
+#slideshowRow{width: 100%; float: left;}
+
+.slideshowRowOverlay{width: 100%; position: absolute; top: 0; left: 0; background: #000000; opacity: 0.4;}
+
+.slide{position: absolute; top: 0; left: 0; width: 100%;}				
+				
+
+#slideshowRowBottomBar{position: absolute; bottom: 0; margin: 0px auto; padding: 18px 0 18px 0; background: #1b4780; color: #ffffff; font-size: 18px; 
+					width: 100%; height: 20px; font-weight: bold;}
+					
+#slideshowRowBottomBarButton{width: 120px; height: 80px; padding: 0px 10px 0 10px; margin: 0px auto; display: inline-block; position: relative; top: -42px; 
+					border-top-left-radius: 50px; border-top-right-radius: 50px; background: #13345c; cursor: pointer;}
+
+#slideshowRowBottomBarButton:hover{background: #0f2a4d;}					
+				
+#slideshowRowBottomBarButtonIMG{width: 60px; height: 60px; margin: 0px auto; position: relative; top: 50%; margin-top: -30px;
+					background: url('http://localhost/Personal Website/Images/downarrow.svg') no-repeat center;
+					 -webkit-background-size: cover;
+					 -moz-background-size: cover;
+					 background-size: cover;}			
+					 
+#slide1{background: url('http://localhost/GitHub Sites/Dymazing Template/Images/ss1.jpg') no-repeat center fixed; background-size: 100%; height: 1000px;}
+#slide1 h2, #slide1 h3{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+
+#slide1Content{width: 800px; height: 160px; position: relative; top : 50%; margin: 0px auto; margin-top: -80px; color: #ffffff;
+				font-family: 'Saira Condensed', sans-serif;}
+				
+#slide1Content h2{font-size: 60px;}
+#slide1Content h3{font-size: 36px;}	
+
+	
+#slide2{background: url('http://localhost/GitHub Sites/Dymazing Template/Images/ss2.jpg') no-repeat center fixed; background-size: 100%; display: none;}
+#slide2 h2{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+					 
+#slide2Content{width: 90%; height: 300px; position: relative; top : 50%; margin: 0px auto; margin-top: -150px; color: #ffffff;
+				font-family: 'Saira Condensed', sans-serif; text-align: left;}
+
+#slide2Content h2{font-size: 48px; width: 30%; padding: 0 10%; border-right: 4px solid #ffffff; margin-bottom: 10px;}
+
+#viewServicesButton{display: inline-block; padding: 10px 20px; margin-left: 10%; background: #ffffff; color: #444444; cursor: pointer; font-size: 18px;}
+#viewServicesButton:hover{background: #95699A; color: #ffffff;}
+
+				
+#prevSlideButton{width: 100px; height: 100px; position: absolute; top: 50%; margin-top: -50px; left: 10px; cursor: pointer;}
+#prevSlideButton:hover{content: url('http://localhost/GitHub Sites/Dymazing Template/Images/leftarrow_hovered.svg')}
+#nextSlideButton{width: 100px; height: 100px; position: absolute; top: 50%; margin-top: -50px; right: 10px; cursor: pointer;}
+#nextSlideButton:hover{content: url('http://localhost/GitHub Sites/Dymazing Template/Images/rightarrow_hovered.svg')}
+
+/* Services Row */
+
+#servicesRow{background: #e9e9e9;}
+
+.serviceBlock{display: inline-block; width: 26%; padding: 16px 2%; margin: 0 1.5%; background: #1b4780; border-top: 6px solid #95699A; 
+		float: left; color: #ffffff;}
+
+.serviceBlock .serviceIMGHolder{width: 120px; height: 120px; margin: 0px auto; margin-bottom: 14px; -webkit-border-radius: 60px; -moz-border-radius: 60px;
+		border-radius: 60px;}
+
+.serviceBlock h4{font-size: 24px; margin-bottom: 6px;}
+
+.serviceBlock p {margin-bottom: 20px;}
+
+.serviceBlockActionButton{padding: 10px 30px; display: inline-block; background: #ffffff; color: #1b4780; cursor: pointer;}
+.serviceBlockActionButton:hover{background: #95699A; color: #ffffff;}
+
+
+#sb1 .serviceIMGHolder{background: url('http://localhost/Personal Website/Images/tutorService.png') no-repeat center; background-color: #ffffff;
+			-webkit-background-size: 70%; -moz-background-size: 70%; background-size: 70%;}
+			
+#sb2 .serviceIMGHolder{background: url('http://localhost/Personal Website/Images/appService.png') no-repeat center; background-color: #ffffff;
+			-webkit-background-size: 55%; -moz-background-size: 55%; background-size: 55%;}
+			
+#sb3 .serviceIMGHolder{background: url('http://localhost/Personal Website/Images/webService.png') no-repeat center; background-color: #ffffff;
+			-webkit-background-size: 55%; -moz-background-size: 55%; background-size: 55%;}
+
+
+
+/* Testimonials Row */
+
+#testimonialsRow{height: 300px; background-color: #95699A; background-image: url('http://localhost/GitHub Sites/Dymazing Template/Images/linesBG.png');
+		background-repeat: repeat;}	
+				 
+#testimonialsRowContent{width: 800px; height: 100%; margin: auto;}
+	
+.testimonialControlButton{width: 50px; height: 50px; position: relative; cursor: pointer; top: 50%; margin-top: -25px;}	
+#testNextButton{float: left;}
+#testNextButton:hover{content: url('http://localhost/GitHub Sites/Dymazing Template/Images/leftarrow_hovered.svg')}
+#testPrevButton{float: right;}
+#testPrevButton:hover{content: url('http://localhost/GitHub Sites/Dymazing Template/Images/rightarrow_hovered.svg')}
+
+.testimonial{width: 620px; margin: 0 40px; float: left; color: #ffffff;}
+.testimonial h3{font-size: 48px; font-family: 'Saira Condensed', sans-serif; margin: 50px 0 10px 0;}				 
+.testimonial q{font-size: 24px;}				 
+
+#testimonial2{display: none;}
+
+
+/* Contact Row */
+
+#contactRow{background: #ffffff; padding: 40px 0 60px 0;}	
+
+#contactRow h3{font-size: 48px; font-family: 'Saira Condensed', sans-serif; color: #444444; margin-bottom: 20px;}
+
+#contactRow form{width: 600px; margin: auto;}
+
+#contactRow input[type*="text"], #contactRow input[type*="email"], textarea{float: left; padding: 10px; -webkit-border-radius: 4px; -moz-border-radius: 4px; margin-bottom: 10px;
+												border-radius: 4px; border: 1px solid #c9c9c9;}
+textarea{width: 578px; height: 100px;}
+
+#contactName{width: 267px; margin-right: 20px;}
+#contactSubject{width: 267px;}
+#contactEmail{width: 578px;}
+
+#contactSubmitButton{display: block; width: 100%; margin: 0px auto; padding: 12px 0; background: #f36666; border: none; color: #ffffff; 
+					cursor: pointer; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+					
+#contactSubmitButton:hover{background: #e66161;}
+
+
+
+/* Footer */
+
+#footer{color: #ffffff; background: #1b4780;}
+
+#footer span{cursor: pointer;}
+
+#footer span:hover{color: #a9a9a9;}
+
+
+
+#scrollToTopButton{width: 50px; height: 50px; border: 4px solid #444444; position: fixed; bottom: 20px; right: 20px; opacity: 0.7; cursor: pointer;
+		background: url('http://localhost/GitHub Sites/Dymazing Template/Images/uparrow.svg') no-repeat center; background-color: #00cccc;
+		-webkit-background-size: 55%; -moz-background-size: 55%; background-size: 55%; display: none;}
+		
+#scrollToTopButton:hover{opacity: 1.0;}
+
+				 
+/*MOBILE COMPATIBILITY*/
+@media only screen 
+  and (max-width: 880px)
+{
+	
+}
+
+		
+		
