@@ -19,6 +19,7 @@
 		
 			//include("file:///C:/xampp/htdocs/Github Sites/Dymazing Template/Core.php");
 			include("file:///C:/xampp/htdocs/Github Sites/Dymazing Template/V1/Mega Navigation/Normal/NormalNavigation.php"); 
+			include("file:///C:/xampp/htdocs/Github Sites/Dymazing Template/V1/Mega Navigation/Mobile/MobileNavigation.php"); 
 		
 		?>
 				
@@ -168,7 +169,7 @@
 			
 			<footer id = "footer" class = "sectionRow">
 			
-				&copy Dymazing Template | 
+				<span> &copy Dymazing Template | </span>
 				<span onclick = "scrollToTarget('servicesRow')"> Services </span> |
 				<span onclick = "scrollToTarget('testimonialsRow')"> Testimonials </span> |
 				<span onclick = "scrollToTarget('contactRow')"> Contact </span>

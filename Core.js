@@ -20,8 +20,7 @@ function setElementToScreenHeight(element)
 	var screenHeight = getScreenHeight();
 	var screenWidth = getScreenWidth();
 	
-	if(screenWidth > 950)
-		document.getElementById(element).style.height = screenHeight + "px";
+	document.getElementById(element).style.height = screenHeight + "px";
 }
 
 function setSlideShow()
@@ -162,10 +161,10 @@ function toggleNextTestimonial()
 {
 	var testimonials = document.getElementsByClassName("testimonial");
 	
-	if(testimonials[0].style.display == "block" || testimonials[0].style.display == "")
+	if(testimonials[0].style.display == "inline-block" || testimonials[0].style.display == "")
 	{
 		testimonials[0].style.display = "none";
-		testimonials[1].style.display = "block";
+		testimonials[1].style.display = "inline-block";
 	}
 }
 
@@ -173,10 +172,38 @@ function togglePreviousTestimonial()
 {
 	var testimonials = document.getElementsByClassName("testimonial");
 	
-	if(testimonials[1].style.display == "block" || testimonials[1].style.display == "")
+	if(testimonials[1].style.display == "inline-block" || testimonials[1].style.display == "")
 	{
 		testimonials[1].style.display = "none";
-		testimonials[0].style.display = "block";
+		testimonials[0].style.display = "inline-block";
+	}
+}
+
+
+function toggleMobileNavigation()
+{
+	var mobileNavContent = document.getElementById("mobileNavContent");
+	var menuLines = document.getElementsByClassName("menuLine");
+	
+	if(mobileNavContent.style.display == "none" || mobileNavContent.style.display == "")
+	{
+		mobileNavContent.style.display = "block";
+		
+		menuLines[1].style.visibility = "hidden";		
+		menuLines[0].style.transform = "rotate(45deg)";		
+		menuLines[0].style.top = "16px";		
+		menuLines[2].style.transform = "rotate(-45deg)";		
+		menuLines[2].style.top = "-14px";
+	}
+	else
+	{
+		mobileNavContent.style.display = "none";
+		
+		menuLines[1].style.visibility = "visible";		
+		menuLines[0].style.transform = "rotate(0deg)";		
+		menuLines[0].style.top = "0px";		
+		menuLines[2].style.transform = "rotate(0deg)";		
+		menuLines[2].style.top = "0px";
 	}
 }
 

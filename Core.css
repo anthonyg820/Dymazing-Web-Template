@@ -42,6 +42,26 @@ a[class *= 'linkButton']{display: block; margin: 0px auto; width: 250px; border-
 						-webkit-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s;}
 #normalNavResumeButton:hover{background: #e7e7e7;}
 		
+
+/* MOBILE NAVIGATION */
+#mobileNavMainBar{position: absolute; top: 0; width: 100%; border-bottom: 1px solid #444444; background: #ffffff; z-index: 4; display: none;}
+#mobileNavMainBarContentHolder{width: 100%; height: 100%; margin: 0px auto;}
+		
+#mobileNavigationLogo{width: 220.8px; height: 48px; padding:12px; float: left;}
+
+#mbNavButton{float: right;
+		   border-left: 1px solid #444444;
+		   padding: 10px 16px 10px 16px;
+		   cursor: pointer;}
+		   
+.menuLine{width: 40px; height: 7.2px; background: #1b4780; margin: 7.5px 0; position: relative;
+		  -webkit-transition: 0.3s; -moz-transition: 0.3s; transition: 0.3s;}
+
+#mobileNavContent{float: left; width: 100%; list-style: none; text-align: left; background: #e9e9e9; color: #444444; display: none;}
+
+#mobileNavContent li{width: 90%; padding: 14px 5%; display: block; border-top: 1px solid #c9c9c9; cursor: pointer;}
+
+#mobileNavContent li:hover{background: #c9c9c9;}
 		
 		
 /*Slideshow Row*/
@@ -67,17 +87,17 @@ a[class *= 'linkButton']{display: block; margin: 0px auto; width: 250px; border-
 					 -moz-background-size: cover;
 					 background-size: cover;}			
 					 
-#slide1{background: url('http://localhost/GitHub Sites/Dymazing Template/Images/ss1.jpg') no-repeat center fixed; background-size: 100%; height: 1000px;}
+#slide1{background: url('http://localhost/GitHub Sites/Dymazing Template/Images/ss1.jpg') no-repeat center fixed; background-size: cover;}
 #slide1 h2, #slide1 h3{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
 
-#slide1Content{width: 800px; height: 160px; position: relative; top : 50%; margin: 0px auto; margin-top: -80px; color: #ffffff;
+#slide1Content{width: 100%; height: 160px; position: relative; top : 50%; margin: 0px auto; margin-top: -80px; color: #ffffff;
 				font-family: 'Saira Condensed', sans-serif;}
 				
 #slide1Content h2{font-size: 60px;}
 #slide1Content h3{font-size: 36px;}	
 
 	
-#slide2{background: url('http://localhost/GitHub Sites/Dymazing Template/Images/ss2.jpg') no-repeat center fixed; background-size: 100%; display: none;}
+#slide2{background: url('http://localhost/GitHub Sites/Dymazing Template/Images/ss2.jpg') no-repeat center fixed; background-size: cover; display: none;}
 #slide2 h2{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
 					 
 #slide2Content{width: 90%; height: 300px; position: relative; top : 50%; margin: 0px auto; margin-top: -150px; color: #ffffff;
@@ -128,15 +148,15 @@ a[class *= 'linkButton']{display: block; margin: 0px auto; width: 250px; border-
 #testimonialsRow{height: 300px; background-color: #95699A; background-image: url('http://localhost/GitHub Sites/Dymazing Template/Images/linesBG.png');
 		background-repeat: repeat;}	
 				 
-#testimonialsRowContent{width: 800px; height: 100%; margin: auto;}
+#testimonialsRowContent{width: 100%; height: 100%; margin: auto;}
 	
-.testimonialControlButton{width: 50px; height: 50px; position: relative; cursor: pointer; top: 50%; margin-top: -25px;}	
+.testimonialControlButton{width: 50px; height: 50px; position: relative; cursor: pointer; top: 50%; margin-top: -25px; display: inline-block;}	
 #testNextButton{float: left;}
 #testNextButton:hover{content: url('http://localhost/GitHub Sites/Dymazing Template/Images/leftarrow_hovered.svg')}
 #testPrevButton{float: right;}
 #testPrevButton:hover{content: url('http://localhost/GitHub Sites/Dymazing Template/Images/rightarrow_hovered.svg')}
 
-.testimonial{width: 620px; margin: 0 40px; float: left; color: #ffffff;}
+.testimonial{width: 75%; margin: 0 auto; color: #ffffff; display: inline-block;}
 .testimonial h3{font-size: 48px; font-family: 'Saira Condensed', sans-serif; margin: 50px 0 10px 0;}				 
 .testimonial q{font-size: 24px;}				 
 
@@ -185,10 +205,57 @@ textarea{width: 578px; height: 100px;}
 				 
 /*MOBILE COMPATIBILITY*/
 @media only screen 
-  and (max-width: 880px)
+  and (max-width: 800px)
 {
+	#normalNavMainBar{display: none;}
+	#mobileNavMainBar{display: block;}
+		
+	
+	/* Services Row */
+
+	#servicesRow{background: #e9e9e9;}
+
+	.serviceBlock{display: block; float: none; width: 88%; padding: 20px 2%; margin: 18px auto;}
+
+	.serviceBlock .serviceIMGHolder{width: 120px; height: 120px; margin: 0px auto; margin-bottom: 14px; -webkit-border-radius: 60px; -moz-border-radius: 60px;
+			border-radius: 60px;}
+
+	
 	
 }
 
-		
-		
+	
+@media only screen 
+  and (max-width: 700px)
+{
+	#contactRow form{width: 100%;}
+
+	#contactRow input[type*="text"], #contactRow input[type*="email"], textarea{width: 90%; float: none;}
+
+	#contactName, #contactSubject{width: 90%; margin: 0;}
+	
+	#contactSubmitButton{width: 90%; padding: 12px 10px;}
+}
+
+
+@media only screen 
+  and (max-width: 650px)
+{	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
